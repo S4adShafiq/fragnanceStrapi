@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_size_sizes",
+  "info": {
+    "displayName": "size",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "Small",
+        "Medium",
+        "Large"
+      ]
+    }
+  }
+}

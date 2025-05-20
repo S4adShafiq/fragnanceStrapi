@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catagories",
+  "info": {
+    "singularName": "catagory",
+    "pluralName": "catagories",
+    "displayName": "Catagory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Name"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "catagory"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_product_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "metaDescription": {
+      "type": "blocks"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "openGraphTitle": {
+      "type": "string"
+    },
+    "openGraphDescription": {
+      "type": "string"
+    },
+    "openGraphImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
