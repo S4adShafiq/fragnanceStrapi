@@ -394,7 +394,7 @@ export interface ApiCatagoryCatagory extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     Name: Schema.Attribute.String;
-    products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
+    products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'Name'>;
     updatedAt: Schema.Attribute.DateTime;
@@ -415,10 +415,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    catagories: Schema.Attribute.Relation<
-      'manyToMany',
-      'api::catagory.catagory'
-    >;
+    catagory: Schema.Attribute.Relation<'manyToOne', 'api::catagory.catagory'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
