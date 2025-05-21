@@ -2,16 +2,17 @@
   "collectionName": "components_size_sizes",
   "info": {
     "displayName": "size",
-    "icon": "apps"
+    "icon": "apps",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "size": {
       "type": "enumeration",
       "enum": [
-        "Small",
-        "Medium",
-        "Large"
+        "ML 30 ",
+        "ML 100",
+        "ML 200"
       ]
     }
   }

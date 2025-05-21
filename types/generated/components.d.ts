@@ -77,11 +77,12 @@ export interface SharedSeo extends Struct.ComponentSchema {
 export interface SizeSize extends Struct.ComponentSchema {
   collectionName: 'components_size_sizes';
   info: {
+    description: '';
     displayName: 'size';
     icon: 'apps';
   };
   attributes: {
-    size: Schema.Attribute.Enumeration<['Small', 'Medium', 'Large']>;
+    size: Schema.Attribute.Enumeration<['ML 30 ', 'ML 100', 'ML 200']>;
   };
 }
 
