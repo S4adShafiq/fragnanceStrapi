@@ -32,9 +32,9 @@
         "audios"
       ]
     },
-    "catagory": {
+    "catagories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::catagory.catagory",
       "inversedBy": "products"
     },
